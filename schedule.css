@@ -12,6 +12,7 @@
 
      td    {border-style: solid; 
             border-width: 2px;
+            background-color: gray;
             border-color: blue;}
             
      h1 {color: blue;
