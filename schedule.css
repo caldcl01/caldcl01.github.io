@@ -2,17 +2,17 @@
             border-width: 2px;
             width: 100%;
             border-spacing: 7px;
-            empty-cells: show}
+            text-align: center;}
      
      th    {border-style: solid;
             border-width: 2px;
             border-color: orange;
-            font-size: 14px;}
+            font-size: 20px;
+            background-color: SandyBrown;}
 
      td    {border-style: solid; 
             border-width: 2px;
-            border-color: blue;
-            empty-cells: show}
+            border-color: blue;}
             
      .food {background-color: #FFCC99}
      .ws {background-color: #CCFF66}
