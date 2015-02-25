@@ -14,7 +14,8 @@
             border-width: 2px;
             border-color: black;}
             
-     .time {background-color: SandyBrown;}
+     .time {background-color: SandyBrown;
+            border-color: orange;}
      .food {background-color: #FFCC99}
      .ws {background-color: #CCFF66}
      .ss {background-color: #CCCCFF}
