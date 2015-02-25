@@ -14,9 +14,9 @@
             border-width: 2px;
             border-color: blue;}
             
-     caption {color: blue;
-              font-size: 100px
-              text-align: center;}
+     h1 {color: blue;
+         font-size: 30px
+         text-align: center;}
             
      .time {background-color: SandyBrown;
             border-color: orange;}
