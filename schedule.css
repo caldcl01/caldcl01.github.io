@@ -1,6 +1,6 @@
      table {border-style: solid; 
             border-width: 2px;
-            width: 100%;
+            width: 80%;
             border-spacing: 7px;
             text-align: center;}
      
@@ -12,7 +12,7 @@
 
      td    {border-style: solid; 
             border-width: 2px;
-            border-color: blue;}
+            border-color: black;}
             
      .time {background-color: SandyBrown;}
      .food {background-color: #FFCC99}
