@@ -1,36 +1,43 @@
 <html>
-<title> Boxes </title>
-   <head>
-      <style>
-      img.card {
-          height: 200px;}
-      
-      #b {position: relative;
-          left: -100px;
-          top: 40px}
-      #c {position: relative;
-          left: -200px;
-          top:80px;
-          z-index:-1}
-   
-       #d {position: relative;
-          left: -350px;
-          top:0px;
-          z-index:-1}
-          
-       #e {position: relative;
-          z-index:-1;
-           top:-40px}
-          
-          
-      </style>
-   </head>
+<head>
+<title> Boxes </title><html>
+<style>
+background { position: relative;
+             background-color: lightblue;
+             top: 100px;
+             left: 100px;
+             width: 100%;
+             height: 100%;
+             border-style:solid}
+
+.box {height: 150px;
+      width: 150px;}
+
+#box1 { position: absolute;
+        top: 10px;
+        left: 50px;
+        background-color: blue;}
+
+#box2 { position: absolute;
+        top: 130px;
+        left: 160px;
+        background-color: red;}
+
+#box1 { position: absolute;
+        top: 200px;
+        left: 250px;
+        background-color: green;}
+
+</style>
+</head>
+
 <body>
-   <img id="a" class="card" src="http://interactivepython.org/runestone/static/webfundamentals/_images/ace-of-hearts.gif" />
-   <img id="b" class="card" src="http://interactivepython.org/runestone/static/webfundamentals/_images/ace-of-hearts.gif" />
-   <img id="c" class="card" src="http://interactivepython.org/runestone/static/webfundamentals/_images/ace-of-hearts.gif" />
-   <img id="d" class="card" src="http://interactivepython.org/runestone/static/webfundamentals/_images/ace-of-hearts.gif" />
-   <img id="e" class="card" src="http://interactivepython.org/runestone/static/webfundamentals/_images/ace-of-hearts.gif" /> 
+   <h1>Boxes</h1>
+   <background>
+   <h2 id="box1" class="box" >box1</h2>
+   <h2 id="box2" class="box" >box2</h2>
+   <h2 id="box3" class="box" >box3</h2>
+</background>
 </body>
 </html>
 
