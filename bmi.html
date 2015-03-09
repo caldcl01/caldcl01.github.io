@@ -13,10 +13,29 @@
         color:green}
         
         body{
-        background-color:#FFFFCC}    
+        background-color:#FFFFCC}   
         
+        table {border-style: solid; 
+            border-width: 2px;
+            width: 100%;
+            border-spacing: 7px
+             }
+     
+     th    {border-style: solid; 
+            border-width: 2px;
+            border-color: orange;
+            background-color: SandyBrown ;
+            text-align: center;}
+     
+     td    {border-style: solid; 
+            border-width: 2px;
+            border-color: blue;
+            background-color: lightblue;
+            text-align:center;}
+     
+     caption {color: darkblue;
+              font-size: 20px}
   
-
     </style>
     <body>
     <h1>BMI Calculator </h1>
@@ -29,7 +48,29 @@
         
         <button onclick="calculate();">Calculate Body Bass </button>
         <h1 id="output"></h1>
-        
+<table>
+<caption>BMI Classifications</caption>
+<tr>
+     <th>BMI</th>
+     <th>Observation</th>
+ </tr>
+ <tr>
+     <td>less than 18.5</td>
+     <td>Underweight</td>
+ </tr>
+ <tr>
+     <td>18.5-24.99</td>
+     <td>Nornal Weight</td>
+ </tr>
+ <tr>
+     <td>25-29.99</td>
+     <td>Overweight</td>
+ </tr>
+ <tr>
+     <td>more than 24.99</td>
+     <td>Obesity</td>
+ </tr>
+</table>
     <script>
         calculate=function()
         {weight=document.querySelector("#w").value;
