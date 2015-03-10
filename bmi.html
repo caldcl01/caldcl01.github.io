@@ -8,12 +8,15 @@
     <h4> Please enter your weight in pounds and height in inches</h4>
     
     <label for="w"> Weight </label>
-        <input type ="text" id="w">
-        <label for="h"> Height </label>
-        <input type ="text" id="h">
+    <input type ="range" min=0  max=400 id="w" onmousemove="calculate();" value="0">
+    
+    <label for="h"> Height </label>
+     <input type ="range" min=0  max=200 id="h" onmousemove="calculate();" value="0">
         
-        <button onclick="calculate();">Calculate Body Bass </button>
-        <h1 id="output"></h1>
+    <h2 id="outputbmi"> BMI: 0 </h1>
+    <h2 id="outputw"> Weight: 0 </h1>
+    <h2 id="outputh"> Height: 0 </h1>
+    
 <table align="center">
 <caption>BMI Classifications</caption>
 <tr>
@@ -39,11 +42,20 @@
 </table>
     <script>
         calculate=function()
+        
         {weight=document.querySelector("#w").value;
         height=document.querySelector("#h").value;
         bmi= (weight * 703)/(height*height);  
-        theh1=document.querySelector("#output");
-        theh1.innerHTML=bmi;}
+         
+        bmih2=document.querySelector("#outputbmi");
+        wh2=document.querySelector("#outputw");
+        hh2=document.querySelector("#outputh"); 
+        
+         
+        bmih2.innerHTML=" Your BMI is: "+ bmi;
+        wh2.innerHTML="Weight: "+ weight;
+        hh2.innerHTML="Height:"+ height;}
+        
     </script>
     </body>
 </html>
