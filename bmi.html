@@ -59,18 +59,7 @@
         hh2.innerHTML="Height:"+ height;
 
         if (bmi>24)
-            {t=document.querySelector("#info");
-            t.innerHTML="You're BMI is High";}
-
-        if (bmi<19)
-            {t=document.querySelector("#info");
-            t.innerHTML="You're BMI is low";}
-        
-        if (bmi>=19 && bmi<=24)
-            {t=document.querySelector("#info");
-            t.innerHTML="You're BMI is ok";}
-            
-        }
+            {document.body.style.backgroundColor="red";}
         
     </script>
     </body>
