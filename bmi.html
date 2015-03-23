@@ -16,7 +16,7 @@
     <h2 id="outputbmi"> BMI: 0 </h1>
     <h2 id="outputw"> Weight: 0 </h2>
     <h2 id="outputh"> Height: 0 </h2>
-    <h1 id="info"></h1> 
+    <h1 id="t"></h1> 
     
     
 <table align="center">
@@ -59,16 +59,16 @@
         hh2.innerHTML="Height:"+ height;
 
         if (bmi>24)
-            {info=document.querySelector("#info");
-            info.innerHTML="You're BMI is High";}
+            {t=document.querySelector("#info");
+            t.innerHTML="You're BMI is High";}
 
         if (bmi<19)
-            {info=document.querySelector("#info");
-            info.innerHTML="You're BMI is low";}
+            {t=document.querySelector("#info");
+            t.innerHTML="You're BMI is low";}
         
         if (bmi>=19 && bmi<=24)
-            {info=document.querySelector("#info");
-            info.innerHTML="You're BMI is ok";}
+            {t=document.querySelector("#info");
+            t.innerHTML="You're BMI is ok";}
             
         }
         
