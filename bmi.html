@@ -14,8 +14,10 @@
      <input type ="range" min=0  max=100 id="h" onmousemove="calculate();" value="0">
         
     <h2 id="outputbmi"> BMI: 0 </h1>
-    <h2 id="outputw"> Weight: 0 </h1>
-    <h2 id="outputh"> Height: 0 </h1>
+    <h2 id="outputw"> Weight: 0 </h2>
+    <h2 id="outputh"> Height: 0 </h2>
+    <h1 id="info"> Your're BMI is</h1> 
+    
     
 <table align="center">
 <caption>BMI Classifications</caption>
@@ -54,7 +56,22 @@
          
         bmih2.innerHTML=" Your BMI is: "+ bmi;
         wh2.innerHTML="Weight: "+ weight;
-        hh2.innerHTML="Height:"+ height;}
+        hh2.innerHTML="Height:"+ height;
+            
+            
+        if (bmi>24)
+            {info=document.querySelector("info");
+            info.innerHTML="You're BMI is High"}
+
+        if (bmi<19)
+            {info=document.querySelector("info");
+            info.innerHTML="You're BMI is low"}
+        
+        if (bmi>=19 && bmi<=24)
+            {info=document.querySelector("info");
+            info.innerHTML="You're BMI is ok"}
+            
+        }
         
     </script>
     </body>
