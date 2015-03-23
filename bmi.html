@@ -44,8 +44,9 @@
 </table>
     <script>
         calculate=function()
+        {
         
-        {weight=document.querySelector("#w").value;
+        weight=document.querySelector("#w").value;
         height=document.querySelector("#h").value;
         bmi= (weight * 703)/(height*height);  
          
@@ -53,23 +54,21 @@
         wh2=document.querySelector("#outputw");
         hh2=document.querySelector("#outputh"); 
         
-         
         bmih2.innerHTML=" Your BMI is: "+ bmi;
         wh2.innerHTML="Weight: "+ weight;
         hh2.innerHTML="Height:"+ height;
-            
-            
+
         if (bmi>24)
             {info=document.querySelector("info");
-            info.innerHTML="You're BMI is High"}
+            info.innerHTML="You're BMI is High";}
 
         if (bmi<19)
             {info=document.querySelector("info");
-            info.innerHTML="You're BMI is low"}
+            info.innerHTML="You're BMI is low";}
         
         if (bmi>=19 && bmi<=24)
             {info=document.querySelector("info");
-            info.innerHTML="You're BMI is ok"}
+            info.innerHTML="You're BMI is ok";}
             
         }
         
