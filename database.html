@@ -1,0 +1,24 @@
+<html>
+    <head>
+    </head>
+    
+    <body>
+        <label for="name"> Name</label>
+        <input type ="text" id="name">
+        <button onclick="register()"> Add </button>
+        
+        <h1> My List </h1>
+        <ul id="out"></ul>
+
+   </body>
+   <script>
+       register=function() {
+           n=document.querySelector("#name").value;
+           newitem=document.createElement("li");
+           newitem.innerHTML=n;
+       
+           thelist=document.querySelector("#out");
+           thelist.appendChild(newitem);}
+
+</script>
+</html>
