@@ -3,7 +3,7 @@
         #h {width:30%}
         
         h1{
-        color:darkgreen;
+        color:darkblue;
         text-align: center;
         text-decoration: underline;}
         
@@ -17,10 +17,9 @@
         
         table {border-style: solid; 
             border-width: 1px;
-            width: 50%;
+            width: 75%;
             border-spacing: 4px
-            float: center;
-        }
+            float: center;}
      
      th    {border-style: solid; 
             border-width: 1px;
