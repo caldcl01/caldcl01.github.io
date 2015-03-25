@@ -17,32 +17,9 @@
     <h2 id="outputw"> Weight: 0 </h2>
     <h2 id="outputh"> Height: 0 </h2>
     
-    
-<table align="center">
-<caption>BMI Classifications</caption>
-<tr>
-     <th>BMI</th>
-     <th>Observation</th>
- </tr>
- <tr>
-     <td>less than 18.5</td>
-     <td>Underweight</td>
- </tr>
- <tr>
-     <td>18.5-24.99</td>
-     <td>Nornal Weight</td>
- </tr>
- <tr>
-     <td>25-29.99</td>
-     <td>Overweight</td>
- </tr>
- <tr>
-     <td>more than 24.99</td>
-     <td>Obesity</td>
- </tr>
-</table>
     <script>
         calculate=function()
+        
         {
         
         weight=document.querySelector("#w").value;
@@ -57,7 +34,7 @@
         wh2.innerHTML="Weight: "+ weight;
         hh2.innerHTML="Height:"+ height;
         
-        {if (bmi<18.5)
+        if (bmi<18.5)
         
         {document.body.style.backgroundColor = "aliceblue";
          value = document.querySelector("#value");
@@ -77,10 +54,7 @@
         {document.body.style.backgroundColor = "azure";
         value = document.querySelector("#value");
         value.innerHTML = "Obesity";}
-         
-        
 
-    
         }
         
     </script>
