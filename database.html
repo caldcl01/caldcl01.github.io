@@ -5,7 +5,7 @@
     </head>
     
     <body>
-    <h1> DATA BASE</h1>
+    <h1> Contact Information: </h1>
     <h2> Please add your information to the database: </h2>
     
         <label for="name"> Name</label>
@@ -22,7 +22,6 @@
 
         <button onclick="register()"> Add Information </button>
        
-        <h2> Contact Information:</h2>
         <table id="database">
         <tr>
             <th>Name:</th>
@@ -42,19 +41,15 @@
            
            database=document.querySelector("#database");
            row=document.createElement("tr");
-           
            n1=document.createElement("td");
            n1.innerHTML=n;
            row.appendChild(n1);
-
            l1=document.createElement("td");
            l1.innerHTML=l;
            row.appendChild(l1);
-           
            p1=document.createElement("td");
            p1.innerHTML=p;
            row.appendChild(p1);
-           
            e1=document.createElement("td");
            e1.innerHTML=e;
            row.appendChild(e1);
