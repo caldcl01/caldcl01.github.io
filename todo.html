@@ -1,0 +1,57 @@
+<html>
+    <head>
+    <title>To do List</title>  
+    <style>
+    li
+        {list-style-type: none;
+        font-size: 24px;}
+        
+    .makered {
+        color: blue;
+        text-decoration: line-through;}
+        
+    </style>
+    </head>
+    
+    <body>
+        
+        <h1> To Do List:</h1>
+        <label for="todo"> To do: </label>
+        <input type ="text" id="todo">
+      
+        <button onclick="addlist()"> Add </button>
+         
+        <ul id="out"></ul>
+
+   </body>
+    
+   <script>
+       addlist=function() 
+       {
+       td=document.querySelector("#todo").value;
+       newitem=document.createElement("li");
+           
+       cb = document.createElement("input");
+       cb.type="checkbox";
+       newitem.appendChild(cb);
+       te = document.createTextNode(td);
+       newitem.appendChild(te);
+           
+           
+       thelist=document.querySelector("#out");
+           
+           
+       cb.onclick=select;
+       thelist.appendChild(newitem);
+       
+       }
+       
+        select = function() 
+        {
+        if (this.checked)
+            this.parentNode.classList.add("makered");
+        else
+            this.parentNode.classList.remove("makered");
+        }
+</script>
+</html>
