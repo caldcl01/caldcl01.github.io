@@ -1,7 +1,7 @@
 <html>
     <head>
     <title>Data Base</title>
-    <br>
+    <link rel="stylesheet" type="text/css" href="bmi.css">
     </head>
     
     <body>
@@ -13,12 +13,21 @@
  
         <label for="phone"> Phone Number</label>
         <input type ="text" id="phone">
+        
+        <label for="email"> Email</label>
+        <input type ="text" id="email">
 
         <button onclick="register()"> Add Information </button>
        
         <h1> Contact Information:</h1>
-        <ul id="out"></ul>
-
+        <table id="database">
+        <tr>
+            <th>Name:</th>
+            <th>Last Name:</th>
+            <th>Phone:</th>
+            <th>Email:</th>
+        </tr>
+        </table>
    </body>
     
    <script>
@@ -26,13 +35,28 @@
            n=document.querySelector("#name").value;
            l=document.querySelector("#last").value;
            p=document.querySelector("#phone").value;
-           info=n+" "+l+": ("+p+")"
+           e=document.querySelector("#email").value;
            
-           newitem=document.createElement("li");
-           newitem.innerHTML=info;
-       
-           thelist=document.querySelector("#out");
-           thelist.appendChild(newitem);}
+           database=document.querySelector("#database");
+           row=document.createElement("tr");
+           
+           n1=document.createElement("td");
+           n1.innerHTML=n;
+           row.appendChild(n1);
 
+           l1=document.createElement("td");
+           l1.innerHTML=l;
+           row.appendChild(l1);
+           
+           p1=document.createElement("td");
+           p1.innerHTML=p;
+           row.appendChild(p1);
+           
+           e1=document.createElement("td");
+           e1.innerHTML=e;
+           row.appendChild(e1);
+           
+           database.appendChild(row); }
+       
 </script>
 </html>
