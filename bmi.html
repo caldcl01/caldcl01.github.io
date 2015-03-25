@@ -56,6 +56,29 @@
         bmih2.innerHTML=" Your BMI is: "+ bmi;
         wh2.innerHTML="Weight: "+ weight;
         hh2.innerHTML="Height:"+ height;
+        
+        if (bmi<18.5)
+        
+        {document.body.style.backgroundColor = "aliceblue";
+         value = document.querySelector("#value");
+         value.innerHTML = "Underweight";}
+            
+        if (bmi>=18.5 && bmi<=24.99)
+        {document.body.style.backgroundColor ="honeydew";
+         value = document.querySelector("#value");
+         value.innerHTML = "Normal Weight";}
+         
+        if (bmi>=25 && bmi<=29.99)
+        {document.body.style.backgroundColor = "wheat";
+        value = document.querySelector("#value");
+        value.innerHTML = "Overweight";}
+            
+        if (bmi>29.99)
+        {document.body.style.backgroundColor = "azure";
+        value = document.querySelector("#value");
+        value.innerHTML = "Obesity";}
+         
+        
 
     
         }
