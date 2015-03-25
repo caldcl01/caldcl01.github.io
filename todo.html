@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="todo.css">
     <style>
 
-    .makered {
+    .cross {
         color: blue;
         text-decoration: line-through;}
         
@@ -47,9 +47,9 @@
         select = function() 
         {
         if (this.checked)
-            this.parentNode.classList.add("makered");
+            this.parentNode.classList.add("cross");
         else
-            this.parentNode.classList.remove("makered");
+            this.parentNode.classList.remove("cross");
         }
 </script>
 </html>
