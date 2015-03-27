@@ -7,7 +7,9 @@ header {background-color: #006699;
         width: 100%;
         height: 50px;}
         
-             
+body {margin-top: 50px;
+      background-color:#E6ECEF}
+        
 leftsection {float: left;
              width: 20%;
              height: 500px;
@@ -18,8 +20,6 @@ leftsection {float: left;
 footer {clear: both;
         background-color: #CCD8DE;}
         
-body {background-color:#E6ECEF}
-
 h1 {color: darkblue; 
     font-size: 40pt; 
     text-align: center;
