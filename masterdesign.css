@@ -42,8 +42,9 @@ table {border-style: solid;
      
 th    {border-style: solid; 
        border-width: 1px;
-       border-color: orange;
-       background-color: SandyBrown ;
+       border-color: #0F1F2E;
+       background-color: #336699;
+       color:white;
        text-align: center;}
      
 td    {border-width: 2px;
