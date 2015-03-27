@@ -1,55 +1,74 @@
 <html>
     <head>
     <title>To do List</title>  
-    <link rel="stylesheet" type="text/css" href="todo.css">
+    <link rel="stylesheet" type="text/css" href="masterdesign.css">
     <style>
-
-    .cross {
-        color: blue;
-        text-decoration: line-through;}
+    li {list-style-type: none}
+        
+    .complete 
+        {text-decoration: line-through;}
+        
+    .Urgent {color:red}
+    .Important {color:green}
+    .Normal {color:black}
         
     </style>
     </head>
-    
-    <body>
-        
-        <h1> To Do List:</h1>
-        <label for="todo"> To do: </label>
-        <input type ="text" id="todo">
-      
-        <button onclick="addlist()"> Add </button>
-         
-        <ul id="out"></ul>
 
-   </body>
+<body>
+    <h1> To Do List:</h1>
+     
+    <label for="todo"> To do: </label>
+    <input type ="text" id="todo"> 
+
+    <select id="priority">
+        
+        <option>Urgent</option>
+        <option>Important</option>
+        <option>Normal</option>
+    </select>
+     
+    <button onclick="addlist()"> Add</button>
+         
+    <ul id="output"></ul>
+
+</body>
     
    <script>
        addlist=function() 
-       {
-       td=document.querySelector("#todo").value;
-       newitem=document.createElement("li");
-           
-       cb = document.createElement("input");
-       cb.type="checkbox";
-       newitem.appendChild(cb);
-       te = document.createTextNode(td);
-       newitem.appendChild(te);
-           
-           
-       thelist=document.querySelector("#out");
-           
-           
-       cb.onclick=select;
-       thelist.appendChild(newitem);
        
+       {
+       todo=document.querySelector("#todo").value;
+       newactivity=document.createElement("li");
+          
+           
+       checkbox = document.createElement("input");
+       checkbox.type="checkbox";
+       newactivity.appendChild(checkbox);
+           
+           
+       newinput = document.createTextNode(todo); 
+       newactivity.appendChild(newinput);
+           
+           
+       todolist=document.querySelector("#output");
+       checkbox.onclick=select;
+       todolist.appendChild(newactivity);
+           
+       priorityoption=document.querySelector("#priority");
+       priorityindex=priorityoption.selectedIndex;
+       priority=priorityoption.options[priorityindex].value;
+       newactivity.classList.add(priority);
+          
        }
        
-        select = function() 
+         select = function() 
         {
         if (this.checked)
-            this.parentNode.classList.add("cross");
+            this.parentNode.classList.add("complete");
         else
-            this.parentNode.classList.remove("cross");
+            this.parentNode.classList.remove("complete");
         }
-</script>
+</script>    
+
 </html>
