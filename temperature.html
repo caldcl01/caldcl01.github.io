@@ -6,17 +6,17 @@
     </head>
     <body>
 
-    <h4> Please enter the temperature:</h4>
+    <h3> Please enter the temperature:</h4>
     <label for="celsius"> Celsius </label>
         <input type ="text" id="celsius">
         <button onclick="convert();">Convert to Fahrenheit </button>
-        <h3 id="output"></h3>
+        <h2 id="output"></h2>
     <script>
         convert=function()
         {t=document.querySelector("#celsius").value;
         fahren=t*1.8+32;
-        theh3=document.querySelector("#output");
-        theh3.innerHTML="The temperature is: "+ fahren + " F";}
+        theh2=document.querySelector("#output");
+        theh2.innerHTML="The temperature is: "+ fahren + " F";}
         </script>
     </body>
 </html>
