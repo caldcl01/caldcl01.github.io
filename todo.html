@@ -1,17 +1,18 @@
 <html>
     <head>
     <title>To do List</title>  
+    
     <link rel="stylesheet" type="text/css" href="masterdesign.css">
+    
     <style>
     li {list-style-type: none}
-        
     .complete 
         {text-decoration: line-through;}
         
     .Urgent {color:red}
     .Important {color:green}
     .Normal {color:black}
-        
+    
     </style>
     </head>
     
@@ -37,8 +38,8 @@
    <script>
        addlist=function() 
        
-       {
-       todo=document.querySelector("#todo").value;
+       {todo=document.querySelector("#todo").value;
+       document.querySelector("#todo").value="";
        newactivity=document.createElement("li");
           
            
@@ -59,16 +60,12 @@
        priorityindex=priorityoption.selectedIndex;
        priority=priorityoption.options[priorityindex].value;
        newactivity.classList.add(priority);
-          
-       }
        
-         select = function() 
-        {
+       select = function() {
         if (this.checked)
             this.parentNode.classList.add("complete");
         else
-            this.parentNode.classList.remove("complete");
-        }
+            this.parentNode.classList.remove("complete");}
+       
 </script>    
-
 </html>
