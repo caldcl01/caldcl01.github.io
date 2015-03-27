@@ -8,6 +8,9 @@ header {background-color: #006699;
         height: 50px;}
 
 body    {background-color:#E6ECEF}
+
+section {top: 120px;
+         float:center;}
         
 leftsection {float: left;
              width: 20%;
