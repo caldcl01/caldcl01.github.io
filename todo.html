@@ -33,12 +33,14 @@
     
      
     <button onclick="addlist()"> Add</button>
+    <button onclick="cleartodo()"> Clear Items </button>
          
     <ul id="output"></ul>
 </section>
 </body>
     
    <script>
+   
        addlist=function() 
        
        {todo=document.querySelector("#todo").value;
@@ -64,10 +66,15 @@
        priority=priorityoption.options[priorityindex].value;
        newactivity.classList.add(priority);
        }
-         select = function() {
+        
+        select = function() {
         if (this.checked)
             this.parentNode.classList.add("complete");
         else
             this.parentNode.classList.remove("complete");}
+            
+        cleartodo= function ()
+        { todolist=document.querySelector("#output")
+          todolist.innerHTML=""}
 </script>    
 </html>
